@@ -40,6 +40,29 @@
         grid-column: 4/5;
         grid-row: 1/2;
     }
+    /*------main home p--------*/
+
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    .principal{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        border: 1px #A1B0AB solid;
+    }
+    .coastal{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border: 1px #A1B0AB solid;
+    }
+    .weather{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        border: 1px #A1B0AB solid;
+    }
     /*------footer home p--------*/
     footer{
         display: grid;

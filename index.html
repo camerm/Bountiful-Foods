@@ -7,9 +7,10 @@
     <meta name="description" content="Final Project WDD230 Web Fronted Development - BYUI">
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>Document</title>
+    <script defer src="scripts/lastupdate.js"></script>
     <script defer src="scripts/currentdate.js"></script>
     <script defer src="scripts/windchill.js"></script>
-    <script defer src="scripts/lastupdate.js"></script>
+
     <link rel="stylesheet" href="styles/normalize.css"> 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -34,15 +35,20 @@
                 <li><a href="fresh.html">Fresh</a></li>
                 <li><a href="resource page.html">Resource Page</a></li>
                 <li><a href="about us">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="layout">
-            <p>
-
-            </p>
+            <nav class="principal">
+                <h1>Principal</h1>
+            </nav>
+            <nav class="coastal">
+                <h1>Coastal</h1>
+            </nav>
+            <nav class="weather">
+                <h1>Weather</h1>
+            </nav>
         </div>
     </main>
     <footer>
@@ -60,12 +66,10 @@
             <p><a href="https://www.google.com/maps/place/Plaza+de+Armas+de+Arequipa/@-16.3991223,-71.5389012,17z/data=!4m5!3m4!1s0x91424a59ffae2999:0xc419f49d1f9cd270!8m2!3d-16.3988084!4d-71.5369056?hl=es-419">Location Map</a></p>
         </div>
         <div class="autor">
-            <p> &copy; 2022 Beautiful Foods</p>
+            <p> &copy; <span id="currentYear"></span> Beautiful Foods</p>
             <p>Oliverio Cameron</p>
             <p>WDD 230 Final Project</p>
-            <p>Last Update: <span id="lastModific"></span></p>
-            <p class="date">Current date: <span id="currentdate"></span></p>
-            <script src="js/currentdate.js"></script>
+            <p>Last Update: <span id="lstmoddate"></span></p>
         </div>
     </footer>
 </body>
