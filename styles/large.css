@@ -39,8 +39,37 @@
     .social{
         grid-column: 4/5;
         grid-row: 1/2;
-    }   
-
+    }
+    /*------footer home p--------*/
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        background-color: rgba(32, 106, 61, 0.938);
+    }
+    footer p, h1, h2{
+        color:rgb(255, 251, 251);
+    }
+    footer img{
+        margin: 10px;
+    }
+    .projectname{
+        grid-column: 1/2;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+    .contact{
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+    .autor{
+        grid-column: 3/4;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
 
 
 
