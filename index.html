@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="images/favicon.ico">
     <title>Document</title>
     <script defer src="scripts/lastupdate.js"></script>
-    <script defer src="scripts/currentdate.js"></script>
     <script defer src="scripts/windchill.js"></script>
 
     <link rel="stylesheet" href="styles/normalize.css"> 
@@ -57,7 +56,14 @@
                 <h1>Coastal</h1>
             </nav>
             <nav class="weather">
-                <h1>Weather</h1>
+                <h2>Weather</h2>
+                <h1><span id="current-temp"></span> &deg;C</h1>
+                <figure>
+                    <img src="" alt="" id="weather-icon"/>
+                    <figcaption></figcaption>
+                </figure>
+                <p>Wind Speed:<span id="wind"></span> Km/h</p>
+                <p>Wind chill:<span id="wind-chill"></span> N/A</p>
             </nav>
         </div>
     </main>

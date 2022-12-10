@@ -70,9 +70,11 @@ main h1{
 .principal h2{
     color: black;
 }
+.weather h2, p{
+    color: black;
+}
 
 /*------footer home p--------*/
-
 
 footer{
     display: grid;
