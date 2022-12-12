@@ -108,9 +108,11 @@ footer img{
 
 
 /*-------------------------------------About Us--------------------------------------*/
-.contact h2{
+.contact h2, p{
+    margin: 40px;
     margin-top: 1.5rem;
     color: black;
+    text-align: center;
 }
 .contact-form{
     background-color: rgb(255, 255, 255);
