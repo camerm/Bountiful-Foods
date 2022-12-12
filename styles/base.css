@@ -93,7 +93,7 @@ footer img{
     justify-self: center;
     text-align: center;
 }
-.contact{
+.contact-inf{
     grid-column: 1/2;
     align-self: center;
     justify-self: center;
@@ -104,4 +104,61 @@ footer img{
     align-self: center;
     justify-self: center;
     text-align: center;
+}
+
+
+/*-------------------------------------About Us--------------------------------------*/
+.contact h2{
+    margin-top: 1.5rem;
+    color: black;
+}
+.contact-form{
+    background-color: rgb(255, 255, 255);
+}
+form label.top textarea:required{
+    background-color: rgba(218, 75, 75, 0.1);
+}
+form label.top textarea:required:valid{
+    background-color: rgba(98, 167, 98, 0.3);
+}
+
+div.information{
+    margin: 0 auto;
+    max-width: 500px;
+    border: 1px solid #1C211D;
+    border-radius: 8px;
+    padding: .5rem 2%;
+    background-color: rgb(236, 242, 243);
+    text-align: center;
+}
+
+iframe{
+    width:100%;
+    border-radius: 8px;
+    margin-top: 1rem;    
+}
+
+.title{
+    margin-bottom: 1rem;
+}
+.title img{
+    width: 150px;
+}
+.contact, .contact p{
+    margin-bottom: 1rem;
+}
+.contact a{
+    color: #D5ECD4;
+}
+.end{
+    border-top: 0.1rem rgba(255,255,255, 0.2) solid;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+}
+.end a {
+    color:white;
+}
+.line {
+    display: none;
 }
