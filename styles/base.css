@@ -73,6 +73,19 @@ main h1{
 .weather h2, p{
     color: black;
 }
+.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.one {
+    grid-column: 1/2;
+}
+.two {
+    grid-column: 2/3;
+}
+.tree {
+    grid-column: 3/4;
+}
 
 /*------footer home p--------*/
 

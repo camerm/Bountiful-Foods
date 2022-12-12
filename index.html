@@ -9,6 +9,7 @@
     <title>Document</title>
     <script defer src="scripts/lastupdate.js"></script>
     <script defer src="scripts/windchill.js"></script>
+    <script defer src="scripts/forecast.js"></script>
 
     <link rel="stylesheet" href="styles/normalize.css"> 
     <link rel="stylesheet" href="styles/base.css">
@@ -54,17 +55,34 @@
                 </div>
             </nav>
             <nav class="coastal">
-                <h1>Coastal</h1>
+                <h1>Carlsbad in the Coastal of California</h1>
+                <p>Carlsbad is a coastal city in the North County region of San Diego County, California, United States. The city is 87 miles (140 km) south of downtown Los Angeles and 35 miles (56 km) north of downtown San Diego. As of the 2020 census, the population of the city was 114,746. Carlsbad is a popular tourist destination and home to many businesses in the golf industry</p>
+                <img class="carlsbad-img" src="images/carlsbad.jpg" alt="carlsbad-image">
             </nav>
             <nav class="weather">
-                <h2>Weather</h2>
+                <h2>Carlsbad, US</h2>
                 <h1><span id="current-temp"></span> &deg;C</h1>
                 <figure>
                     <img src="" alt="" id="weather-icon"/>
                     <figcaption></figcaption>
                 </figure>
-                <p>Wind Speed:<span id="wind"></span> Km/h</p>
-                <p>Wind chill:<span id="wind-chill"></span> N/A</p>
+                <p>Wind Speed: <span id="wind"></span> Km/h</p>
+                <p>humidity: <span id="humidity"></span>%</p>
+                <h3>Forecast 3 days</h3>
+                <nav class="forecast">
+                        <nav class="one">
+                            <p>Wind Speed: <span id="forecasTemperature"></span> Km/h</p>
+                            <p>humidity: <span id="humidity"></span>%</p>
+                        </nav>
+                        <nav class="two">
+                            <p>Wind Speed: <span id="wind"></span> Km/h</p>
+                            <p>humidity: <span id="humidity"></span>%</p>
+                        </nav>
+                        <nav class="tree">
+                            <p>Wind Speed: <span id="wind"></span> Km/h</p>
+                            <p>humidity: <span id="humidity"></span>%</p>
+                        </nav>
+                </nav>
             </nav>
         </div>
     </main>
