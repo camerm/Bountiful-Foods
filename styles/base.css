@@ -131,6 +131,30 @@ div.information{
     background-color: rgb(236, 242, 243);
     text-align: center;
 }
+div.contact-form{
+    margin-left: 40px;
+    text-align: center;
+}
+div.about-us{
+    margin-left: 40px;
+    text-align: center;
+}
+form fieldset {
+    margin: 1.2rem 0.2rem;
+    border: 1px solid #1C211D;
+    border-radius: 8px;
+    padding: .5rem 2%;
+    background-color: rgb(236, 242, 243);
+    text-align: center;
+    
+}
+form label.top{
+    display:block;
+    padding-bottom: 1rem;
+    color: #1C211D;
+    font-size: 0.9rem;
+    text-align: center;
+}
 
 iframe{
     width:100%;
