@@ -64,11 +64,22 @@ nav {
     text-align: center;
 }
 /*--------main home p--------*/
+
+.layout{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    grid-gap:0.5rem;
+    margin:0.5rem;
+    padding: 0.5rem;
+}
 main h1{
     color:black;
 }
 .principal h2{
     color: black;
+}
+.principal-img{
+    width: 100%;
 }
 .weather h2, p{
     color: black;
@@ -200,4 +211,13 @@ iframe{
 }
 .line {
     display: none;
+}
+
+
+/*-------------------------------------Fresh--------------------------------------*/
+.fresh-form h2{
+    color: black;
+}
+.fresh-form{
+    text-align: center;
 }
