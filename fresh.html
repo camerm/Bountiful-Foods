@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
     <header class="header">
@@ -39,18 +41,31 @@
         </nav>
     </header>
     <main>
-        <div class="fresh-form">
+        <div class="fresh-form" id="form">
             <h2>Fresh Request</h2>
             <h3>Field with '*' are required</h3>
-            <form method="get" action="submited-form.html">
+            <form id="fresh-request">
                 <fieldset>
                 <p>Complete the form, for your order. You can select three fruit for your juice.</p>
                 <label class="top"> Name* <input type="text" name="name" required> </label>
                 <label class="top"> Email* <input type="email" name="email" placeholder="someone@gmail.com" required> </label>
                 <label class="top"> Phone* <input type="tel" name="phone" placeholder="1234567890" required> </label>
-                <label class="top"> Specific Instruction <textarea name="description"></textarea> </label>
+                <label class="top"> Fruits*
+                    <select class="fruit-select" name="fruits[]" multiple="multiple"></select>
+                </label>
+                <label class="top"> Specific Instruction <textarea id="description" name="description"></textarea> </label>
+                <button class="submitBtn" id="submitBtn">Make your order</button>
                 </fieldset>
-                <input type="submit" value="Make your order" class="submitBtn">
+            </form>
+        </div>
+
+        <div class="fresh-form" id="result">
+            <h2>Fresh Order Note</h2>
+            <h3>Result</h3>
+            <form>
+                <fieldset id="fresh-result">
+
+                </fieldset>
             </form>
         </div>
     </main>
@@ -75,5 +90,9 @@
             <p>Last Update: <span id="lstmoddate"></span></p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="/Bountiful-Foods/scripts/fresh.js"></script>
 </body>
 </html>
