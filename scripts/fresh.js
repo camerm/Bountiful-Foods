@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#result').hide();
 
     var fruits = [];
-    $.get("/Bountiful-Foods/JSON/fruit.json").success(function(data){
+    $.get("../JSON/fruit.json").success(function(data){
         fruits = data;
         $.each(fruits, function(index) {
             $('.fruit-select').append(
