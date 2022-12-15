@@ -12,6 +12,11 @@
     .navigation li{
         display: inline;
     }
+    .navigation a:hover {
+        color: rgb(47, 87, 50);
+        background-color: rgb(250, 244, 244);
+        padding: 8px;
+    }
     .navigation li:first-child {
         display: none;
     }
@@ -46,6 +51,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        margin: 5px;
+        padding: 5px;
         
     }
     .principal{

@@ -1,9 +1,7 @@
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const forecastTemp = document.querySelector('#forecastTemperature');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-const humidity = document.querySelector('#humidity');
+
 
 
 const url = 'http://api.openweathermap.org/data/2.5/forecast/daily?q=Carlsbad&cnt=3&appid=258c71647178bd46025d18d5b01472a8';
@@ -26,12 +24,10 @@ async function apiFetch() {
 apiFetch();
     
 function displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
     forecastTemp.innerHTML = `<strong>${weatherData.list.temp.day.toFixed(1)}</strong>`;
-    humidity.innerHTML = `<strong>${weatherData.main.humidity.toFixed(0)}</strong>`;
 
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[1].icon}.png`;
+    const desc = weatherData.weather[1].description;
   
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);

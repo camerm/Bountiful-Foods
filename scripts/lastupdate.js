@@ -64,17 +64,3 @@ window.addEventListener("load", () => {
 });
 
 
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
-  }
-  
-  const x = document.getElementById('hamburgerBtn');
-  x.onclick = toggleMenu;
-
-
-const close1 = document.querySelector("#close");
-close1.style.color = "red" ;
-close1.addEventListener("click", () => {
-	banner.style.display = "none";
-});

@@ -16,9 +16,24 @@
         grid-column: 3/4;
         grid-row: 1/2;
     }
-    nav{
-        list-style:none;
-        padding: 0;
+
+    .navigation li{
+        display: inline;
+    }
+    .navigation a:hover {
+        color: rgb(47, 87, 50);
+        background-color: rgb(250, 244, 244);
+        padding: 8px;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    nav ul a{
+        color: rgb(249, 249, 250);
+        margin: 2px;
+    }
+    .navigation a{
+        display: inline;
     }
 
     /*-------------------------------------About Us--------------------------------------*/

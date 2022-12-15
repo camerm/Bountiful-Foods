@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -31,10 +34,9 @@
         </div>
         <nav>
             <ul class="navigation">
-                <li><a class="ham" href="#"></a></li>
+                <i><a class="ham" href="#"></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="fresh.html">Fresh</a></li>
-                <li><a href="resource.html">Resource Page</a></li>
                 <li><a href="about us.html">About Us</a></li>
             </ul>
         </nav>
@@ -46,10 +48,10 @@
                     <img class="principal-img" src="images/picture.jpg" alt="principal-image">
                 </picture>
                 <div class="principal-text">
-                    <h2>Welcome to Beautifull Foods</h2>
+                    <h1>Welcome to Beautifull Foods</h1>
                 </div>
                 <div class="principal-link">
-                    <a href="fresh.html">Fresh</a>
+                    <button type="button" onclick="window.location.href='fresh.html';">fresh-form</button>
                 </div>
             </nav>
             <nav class="coastal">
@@ -69,16 +71,13 @@
                 <h3>Forecast 3 days</h3>
                 <nav class="forecast">
                         <nav class="one">
-                            <p>Wind Speed: <span id="forecasTemperature"></span> Km/h</p>
-                            <p>humidity: <span id="humidity"></span>%</p>
+                            <p>Temperature: <span id="forecasTemperature"></span>°C</p>
                         </nav>
                         <nav class="two">
-                            <p>Wind Speed: <span id="wind"></span> Km/h</p>
-                            <p>humidity: <span id="humidity"></span>%</p>
+                            <p>Temperature: <span id="forecasTemperature"></span>°C</p>
                         </nav>
                         <nav class="tree">
-                            <p>Wind Speed: <span id="wind"></span> Km/h</p>
-                            <p>humidity: <span id="humidity"></span>%</p>
+                            <p>Temperature: <span id="forecasTemperature"></span>°C</p>
                         </nav>
                 </nav>
             </nav>
@@ -96,7 +95,7 @@
         <div class="contact-inf">
             <p>info@beautifulfoods.com</p>
             <p>+(51) 897623514</p>
-            <p><a href="https://www.google.com/maps/place/Plaza+de+Armas+de+Arequipa/@-16.3991223,-71.5389012,17z/data=!4m5!3m4!1s0x91424a59ffae2999:0xc419f49d1f9cd270!8m2!3d-16.3988084!4d-71.5369056?hl=es-419">Location Map</a></p>
+            <p><a href="https://www.google.com/maps/d/viewer?msa=0&mid=1oYpFFQzcgSvUVdvd1dPcE9qIaWQ&ll=33.163303000000006%2C-117.34590400000002&z=17">Location Map</a></p>
         </div>
         <div class="autor">
             <p> &copy; <span id="currentYear"></span> Beautiful Foods</p>
